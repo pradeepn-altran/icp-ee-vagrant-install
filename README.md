@@ -31,7 +31,7 @@ Steps to install and run ICP EE is given below.
 13. You can login and goto the [Dashboard](images/ICP-Dashboard.PNG) and see the health of your install 
 14. Deploy a sample application from the public catalog. Click [Catalog](images/ICP-Catalog.PNG) -> Search for Node JS Sample. 
 15. [Configure](images/NodeJSSample-Configure.PNG) and deploy - follow wizard - specify a release name and choose default namespace
-16. From ICP menu -> Tools -> Vulnerability Advisor -> default - See the scanned results of the deployed application
+16. From ICP menu -> Tools -> Vulnerability Advisor -> [default](images/ICP-VA.PNG) - See the scanned results of the deployed application
   
 Happy Exploring IBM Cloud Private Enterprise Edition !
 
