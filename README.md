@@ -25,8 +25,39 @@ Steps to install and run ICP EE is given below.
 7. Download the Vagrantfile from this repo or clone this repo and edit the Vagrantfile - variable icpEE_TarWebServerHost with your IP Address
 8. Review other configuration parameters from line #1 to #70 or so in the Vagrantfile
 9. In the command shell type vagrant up  to start the vagrant script
+```
+vagrant up
+```
 10. The process will take about 3 hours or so.
 11. If everything goes well, you should see the success message 
+```
+icp:          ,  MM MM MM  MM+     MM.  MMM.  MMM  MMMM:MMM MMMMMM    MMMM
+    icp:           ..MM MM MM. MMI    .MM=  MMM   MMM .MMMMMMM..MMMMMM    MMM
+    icp:             MMM7MMMMM MMM     MMMMMMMM. .MMM $MMMMMMM  MMM    .MMMM.
+    icp:              $M.MMMMM MMM     MMMMMMMM. .MMM.MMMMMMMM.=MM~     MMM
+    icp:               . MMMMMM MM    .MMM. MMM. ZMM: MMMMMMMM MMM. IMM..
+    icp:                  M :MM MM:    MMM. MMM  MMM  MMMMMMM  MMMMMMMM
+    icp:                     MMM7MM. . MMM  MMM. MMM  MMMDMMM  MMMMMM+
+    icp:                      MM.MMMMMMMMM  MMM..MMM ?MM=~MMM.~MMMM
+    icp:                        . MMMM OMM. MMM .MMM MMM .MM= MM
+    icp:                          . M   MMI MMM  MM  MMM..MM
+    icp:                               ..NM =MM .MM .MD..  .
+    icp:
+    icp:
+    icp: ###############################################################################
+    icp: #          IBM Cloud Private enterprise edition installation complete!         #
+    icp: #                  The web console is now available at:                       #
+    icp: #                                                                             #
+    icp: #                          https://192.168.27.100:8443                        #
+    icp: #        username/password is admin/S3cure-icp-admin-passw0rd-default         #
+    icp: #                                                                             #
+    icp: #                          Documentation available at:                        #
+    icp: #               https://www.ibm.com/support/knowledgecenter/SSBS6K            #
+    icp: #                                                                             #
+    icp: #                 Request access to the ICP-ce Public Slack!:                 #
+    icp: #                            http://ibm.biz/BdsHmN                            #
+    icp: ###############################################################################
+```
 12. Follow the instructions to login and initialize the kubectl as described from this page : https://github.com/IBM/deploy-ibm-cloud-private/blob/master/README.md
 13. You can login and goto the [Dashboard](images/ICP-Dashboard.PNG) and see the health of your install 
 14. Deploy a sample application from the public catalog. Click [Catalog](images/ICP-Catalog.PNG) -> Search for Node JS Sample. 
