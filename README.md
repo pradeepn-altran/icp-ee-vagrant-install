@@ -134,4 +134,4 @@ There are numerouse resources on IBM Cloud Private, such as:
 4. IBM Cloud Private Overview:  https://www.coursera.org/lecture/deploy-micro-kube-icp/what-is-ibm-cloud-private-ZoWVi
 5. IBM Cloud Private Knowledge Center: https://www.ibm.com/support/knowledgecenter/SSBS6K_3.1.2/kc_welcome_containers.html
 
-Feel free to send me a note or create an issue if you run into any issues.
+Feel free create an issue if you run into any issues.
