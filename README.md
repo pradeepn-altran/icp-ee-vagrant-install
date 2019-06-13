@@ -21,7 +21,7 @@ Steps to install and run ICP EE is given below.
 3. Get the ICP EE 3.1.2 tar ball from your licensed source (IBM Partner World or IBM Passport Advantage)
 4. Enable IIS on Windows 10. This is used to get the tar ball into your virtual machine. (Example steps here https://www.itnota.com/install-iis-windows/)
 5. Move the ICP EE 3.1.2 tar ball to your default C:\inetpub\wwwroot folder
-6. Determine your local Windows host IP Address and test you can download the tar file using URL http://<IPAddress>/ibm-cloud-private-x86_64-3.1.2.tar.gz
+6. Determine your local Windows host IP Address and test you can download the tar file using URL http://IPAddress/ibm-cloud-private-x86_64-3.1.2.tar.gz
 7. Download the Vagrantfile from this repo or clone this repo and edit the Vagrantfile - variable icpEE_TarWebServerHost with your IP Address
 8. Review other configuration parameters from line #1 to #70 or so in the Vagrantfile
 9. In the command shell type vagrant up  to start the vagrant script
