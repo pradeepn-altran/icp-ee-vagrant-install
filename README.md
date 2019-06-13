@@ -1,5 +1,5 @@
 # icp-ee-vagrant-install
-IBM Cloud Private EE Install using Vagrant 
+## IBM Cloud Private EE Install using Vagrant 
 
 This repository contains documentation and Vagrant file with changes made to the original ICP (IBM Cloud Private) CE Install using Vagrant from this repo: https://github.com/IBM/deploy-ibm-cloud-private/blob/master/docs/deploy-vagrant.md . 
 
