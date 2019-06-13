@@ -33,8 +33,67 @@ Steps to install and run ICP EE is given below.
 15. Configure and deploy - follow wizard - specify a release name and choose default namespace
 16. From ICP menu -> Tools -> Vulnerability Advisor -> default - See the scanned results of the deployed application
   
+Happy Exploring IBM Cloud Private Enterprise Edition !
 
 
+## Misc handy commands to explore your VM and Nodes
+* log in to master vm
+```
+$ vagrant ssh
+Welcome to Ubuntu 16.04.6 LTS (GNU/Linux 4.4.0-131-generic x86_64)
+
+ * Documentation:  https://help.ubuntu.com
+ * Management:     https://landscape.canonical.com
+ * Support:        https://ubuntu.com/advantage
+
+0 packages can be updated.
+0 updates are security updates.
+
+```
+* List the LXD Containers
+```
+vagrant@master:~$ lxc list
++-----------+---------+-----------------------+------+------------+-----------+
+|   NAME    |  STATE  |         IPV4          | IPV6 |    TYPE    | SNAPSHOTS |
++-----------+---------+-----------------------+------+------------+-----------+
+| mgmt-node | RUNNING | 192.168.27.105 (eth0) |      | PERSISTENT | 0         |
+|           |         | 172.17.0.1 (docker0)  |      |            |           |
+|           |         | 10.1.2.192 (tunl0)    |      |            |           |
++-----------+---------+-----------------------+------+------------+-----------+
+| va-node   | RUNNING | 192.168.27.104 (eth0) |      | PERSISTENT | 0         |
+|           |         | 172.17.0.1 (docker0)  |      |            |           |
+|           |         | 10.1.172.128 (tunl0)  |      |            |           |
++-----------+---------+-----------------------+------+------------+-----------+
+| worker1   | RUNNING | 192.168.27.101 (eth0) |      | PERSISTENT | 0         |
+|           |         | 172.17.0.1 (docker0)  |      |            |           |
+|           |         | 10.1.235.128 (tunl0)  |      |            |           |
++-----------+---------+-----------------------+------+------------+-----------+
+| worker2   | RUNNING | 192.168.27.102 (eth0) |      | PERSISTENT | 0         |
+|           |         | 172.17.0.1 (docker0)  |      |            |           |
+|           |         | 10.1.189.64 (tunl0)   |      |            |           |
++-----------+---------+-----------------------+------+------------+-----------+
+```
+* Log in to worker1 node
+```
+vagrant@master:~$ lxc exec worker1 -- sudo --login --user vagrant
+vagrant@worker1:~$ df -h
+Filesystem                    Size  Used Avail Use% Mounted on
+/dev/lxd/containers_worker1   271G   38G  220G  15% /
+none                          492K     0  492K   0% /dev
+udev                           13G     0   13G   0% /dev/fuse
+tmpfs                         100K     0  100K   0% /dev/lxd
+/dev/mapper/vagrant--vg-root  491G   77G  394G  17% /dev/mem
+tmpfs                         100K     0  100K   0% /dev/.lxd-mounts
+tmpfs                          13G     0   13G   0% /dev/shm
+tmpfs                          13G   34M   13G   1% /run
+tmpfs                         5.0M     0  5.0M   0% /run/lock
+tmpfs                          13G     0   13G   0% /sys/fs/cgroup
+tmpfs                         2.6G     0  2.6G   0% /run/user/1000
+vagrant@worker1:~$
+
+```
+
+## IBM Cloud Private resources
 
 There are numerouse resources on IBM Cloud Private, such as:
 
@@ -42,7 +101,6 @@ There are numerouse resources on IBM Cloud Private, such as:
 2. IBM Cloud Private System Administrator's Guide: http://www.redbooks.ibm.com/abstracts/sg248440.html?Open
 3. IBM Cloud Private Application Developers Guide http://www.redbooks.ibm.com/abstracts/sg248441.html?Open
 4. IBM Cloud Private Overview:  https://www.coursera.org/lecture/deploy-micro-kube-icp/what-is-ibm-cloud-private-ZoWVi
+5. IBM Cloud Private Knowledge Center: https://www.ibm.com/support/knowledgecenter/SSBS6K_3.1.2/kc_welcome_containers.html
 
 Feel free to send me a note or create an issue if you run into any issues.
-
-Happy Exploring IBM Cloud Private Enterprise Edition !
