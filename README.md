@@ -124,6 +124,21 @@ vagrant@worker1:~$
 
 ```
 
+* Cluster Information using kubectl 
+Ensure you have initialzed the kubectl. From your web dashboard -> top right admin -> [Configure Client](images/configure-client.PNG) -> Copy [kubectl command] (images/kubectl-configure.PNG) and execute it on the master node shell
+
+```
+vagrant@master:~$ kubectl cluster-info
+Kubernetes master is running at https://192.168.27.100:8001
+catalog-ui is running at https://192.168.27.100:8001/api/v1/namespaces/kube-system/services/catalog-ui:catalog-ui/proxy
+Heapster is running at https://192.168.27.100:8001/api/v1/namespaces/kube-system/services/heapster/proxy
+image-manager is running at https://192.168.27.100:8001/api/v1/namespaces/kube-system/services/image-manager:image-manager/proxy
+CoreDNS is running at https://192.168.27.100:8001/api/v1/namespaces/kube-system/services/kube-dns:dns/proxy
+metrics-server is running at https://192.168.27.100:8001/api/v1/namespaces/kube-system/services/https:metrics-server:/proxy
+platform-ui is running at https://192.168.27.100:8001/api/v1/namespaces/kube-system/services/platform-ui:platform-ui/proxy
+
+```
+
 ## IBM Cloud Private resources
 
 There are numerouse resources on IBM Cloud Private, such as:
