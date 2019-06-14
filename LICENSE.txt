@@ -1,0 +1,6 @@
+# Licensed under Apache License Version 2.0
+#
+# @ Authur Tim Pouyer tpouyer@us.ibm.com
+# https://raw.githubusercontent.com/IBM/deploy-ibm-cloud-private/master/LICENSE
+#
+# Modified for ICP EE install - Pradeep Nambiar pradeep.nambiar@altran.com 06/2019
