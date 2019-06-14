@@ -60,7 +60,7 @@ icp:          ,  MM MM MM  MM+     MM.  MMM.  MMM  MMMM:MMM MMMMMM    MMMM
 ```
 12. Follow the instructions to login and initialize the kubectl as described from this page : https://github.com/IBM/deploy-ibm-cloud-private/blob/master/README.md
 13. You can login and goto the [Dashboard](images/ICP-Dashboard.PNG) and see the health of your install 
-14. Deploy a sample application from the public catalog. Click [Catalog](images/ICP-Catalog.PNG) -> Search for Node JS Sample. 
+14. Deploy a sample application from the public catalog. Click [Catalog](images/ICP-Catalog.png) -> Search for Node JS Sample. 
 15. [Configure](images/NodeJSSample-Configure.PNG) and deploy - follow wizard - specify a release name and choose default namespace
 16. From ICP menu -> Tools -> Vulnerability Advisor -> [default](images/ICP-VA.PNG) - See the scanned results of the deployed application
   
