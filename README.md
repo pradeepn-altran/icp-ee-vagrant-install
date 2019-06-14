@@ -11,7 +11,7 @@ I would like to thank the original authors of the Vagrant file from the repo at 
 
 The script uses LXD containers - https://linuxcontainers.org/lxd/  to create multiple nodes inside the main Ubuntu VM. LXD containers are light weight and efficiently uses memory, cpu and disk space. The script creates 4 LXD containers for worker1, worker2, vulnerability advisor and management nodes. Each of the master node and LXD containers gets access to the full memory, cpu and assigned disk space from the storage pools. This enables efficient use of your full computer memory and cpu.
 
-I am providing the script in the hope it will be useful for others who may be looking to install the ICP Enterprise Edition in their on-premise environment for testing, demo and learning purposes. It took quite a few weeks of efforts in my spare time with help from original authors and countless issue resolution to get this working with two node worker cluster, vulnerability advisor and management nodes. The script is tested with ICP EE version 3.1.2.
+I am providing the script in the hope it will be useful for others who may be looking to install the ICP Enterprise Edition in their on-premise environment for testing, demo and learning purposes. The script is tested with ICP EE version 3.1.2.
 
 Steps to install and run ICP EE is given below.
 
