@@ -125,7 +125,7 @@ vagrant@worker1:~$
 ```
 
 * Cluster Information using kubectl 
-Ensure you have initialzed the kubectl. From your web dashboard -> top right admin -> [Configure Client](images/configure-client.PNG) -> Copy [kubectl command] (images/kubectl-configure.PNG) and execute it on the master node shell
+Ensure you have initialzed the kubectl. From your web dashboard -> top right admin -> [Configure Client](images/configure-client.PNG) -> Copy [kubectl command](images/kubectl-configure.PNG) and execute it on the master node shell
 
 ```
 vagrant@master:~$ kubectl cluster-info
