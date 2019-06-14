@@ -139,6 +139,19 @@ platform-ui is running at https://192.168.27.100:8001/api/v1/namespaces/kube-sys
 
 ```
 
+* get nodes info
+
+```
+vagrant@master:~$ kubectl get nodes
+NAME             STATUS   ROLES               AGE   VERSION
+192.168.27.100   Ready    etcd,master,proxy   38h   v1.12.4+icp-ee
+192.168.27.101   Ready    worker              38h   v1.12.4+icp-ee
+192.168.27.102   Ready    worker              38h   v1.12.4+icp-ee
+192.168.27.104   Ready    va                  38h   v1.12.4+icp-ee
+192.168.27.105   Ready    management          38h   v1.12.4+icp-ee
+vagrant@master:~$
+```
+
 ## IBM Cloud Private resources
 
 There are numerouse resources on IBM Cloud Private, such as:
